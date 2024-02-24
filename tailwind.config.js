@@ -15,7 +15,8 @@ export default {
         'small-group': 'url("images/small-group.jpg")',
         'medium-group': 'url("images/medium-group.jpg")',
         'large-group': 'url("images/large-group.jpg")',
-        'to-top-white-transparent': 'linear-gradient(to top, white, transparent)'
+        'to-top-white-transparent': 'linear-gradient(to top, white, transparent)',
+        'contacts-teaser-bg': 'url("images/contacts-teaser-bg.jpg")'
       },
       colors: {
         'red': '#f33636',
