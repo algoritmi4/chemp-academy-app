@@ -22,7 +22,8 @@ export default {
         'red': '#f33636',
         'gray-text': '#67768e',
         'blue-text': '#060097',
-        'light-purple': '#f9f6fe'
+        'light-purple': '#f9f6fe',
+        'blue': '#3858e9'
       },
       boxShadow: {
         'xl': '0 0 40px 1px rgb(243,54,54)'
@@ -37,6 +38,9 @@ export default {
       },
       backgroundPosition: {
         'left-of-center': '42% 100%'
+      },
+      borderRadius: {
+        'circle': '50%'
       }
     },
   },

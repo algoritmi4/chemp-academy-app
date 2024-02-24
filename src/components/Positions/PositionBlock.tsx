@@ -20,7 +20,7 @@ interface IPositionBlockProps {
 
 export function PositionBlock({ metro, address, phone, ages, mode }: IPositionBlockProps): ReactElement {
   return (
-    <div className="text-gray-text p-5">
+    <div className="text-gray-text">
       <div className="w-full h-[755px]">
         <iframe className="w-full h-full" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aff65efc08eafc19731d85497b14353ab573aefd6d98b6094f54e7ea28e7d3424&amp;source=constructor"></iframe>
       </div>

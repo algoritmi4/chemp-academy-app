@@ -31,8 +31,6 @@ const routesList = [
 export function Navigation({ isHide }: { isHide: boolean }): ReactElement {
   const location = useLocation();
 
-  console.log(location)
-
   return (
     <nav className={`absolute flex flex-col top-full w-full right-0 duration-100 ${isHide ? "invisible opacity-0" : "visible opacity-1"}`}>
       {

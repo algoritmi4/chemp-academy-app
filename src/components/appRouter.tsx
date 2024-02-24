@@ -3,6 +3,7 @@ import { BaseLayout } from "./BaseLayout";
 import { MainPage } from "../pages/MainPage";
 import { NotFound } from "./NotFound";
 import { ContactsPage } from "../pages/СontactsPage";
+import { GalleryPage } from "../pages/GalleryPage";
 
 export const appRouter = createBrowserRouter([
   {
@@ -13,8 +14,15 @@ export const appRouter = createBrowserRouter([
         element: <MainPage />
       },
       {
-        path: 'kontakty/',
+        path: '/kontakty/',
         element: <ContactsPage />
+      },
+      {
+        path: '/galereya/',
+        element: <GalleryPage />
+      },
+      {
+        path: '/o-nas/'
       },
       {
         path: '*',
