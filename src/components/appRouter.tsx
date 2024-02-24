@@ -4,6 +4,7 @@ import { MainPage } from "../pages/MainPage";
 import { NotFound } from "./NotFound";
 import { ContactsPage } from "../pages/СontactsPage";
 import { GalleryPage } from "../pages/GalleryPage";
+import { AboutUsPage } from "../pages/AboutUsPage";
 
 export const appRouter = createBrowserRouter([
   {
@@ -22,7 +23,8 @@ export const appRouter = createBrowserRouter([
         element: <GalleryPage />
       },
       {
-        path: '/o-nas/'
+        path: '/o-nas/',
+        element: <AboutUsPage />
       },
       {
         path: '*',

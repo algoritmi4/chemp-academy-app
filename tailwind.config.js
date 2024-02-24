@@ -16,7 +16,8 @@ export default {
         'medium-group': 'url("images/medium-group.jpg")',
         'large-group': 'url("images/large-group.jpg")',
         'to-top-white-transparent': 'linear-gradient(to top, white, transparent)',
-        'contacts-teaser-bg': 'url("images/contacts-teaser-bg.jpg")'
+        'contacts-teaser-bg': 'url("images/contacts-teaser-bg.jpg")',
+        'about-us-teaser-bg': 'url("images/slider-order.jpg")'
       },
       colors: {
         'red': '#f33636',
