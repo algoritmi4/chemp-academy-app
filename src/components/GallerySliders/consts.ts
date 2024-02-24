@@ -1,9 +1,9 @@
 import order from '../../images/slider-order.jpg';
 import pushUps from '../../images/slider-push-ups.jpg';
 import headStand from '../../images/slider-headstand.jpg';
-import throws from '../../images/slider-throw.jpg';
+import throws from '../../images/large-group.jpg';
 import warpUp from '../../images/slider-warm-up.jpg';
-import wrestling from '../../images/slider-wrestling.jpg';
+import wrestling from '../../images/teaser-bg.jpg';
 
 export const firstSliderSrcList = [
   {

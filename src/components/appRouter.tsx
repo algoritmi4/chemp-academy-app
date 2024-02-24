@@ -6,6 +6,7 @@ import { ContactsPage } from "../pages/СontactsPage";
 import { GalleryPage } from "../pages/GalleryPage";
 import { AboutUsPage } from "../pages/AboutUsPage";
 import { TrainersPage } from "../pages/TrainersPage";
+import { ServicesPage } from "../pages/ServicesPage";
 
 export const appRouter = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ export const appRouter = createBrowserRouter([
       {
         path: '/trenery',
         element: <TrainersPage />
+      },
+      {
+        path: 'uslugi',
+        element: <ServicesPage />
       },
       {
         path: '*',
