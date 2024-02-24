@@ -5,6 +5,7 @@ import { NotFound } from "./NotFound";
 import { ContactsPage } from "../pages/СontactsPage";
 import { GalleryPage } from "../pages/GalleryPage";
 import { AboutUsPage } from "../pages/AboutUsPage";
+import { TrainersPage } from "../pages/TrainersPage";
 
 export const appRouter = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ export const appRouter = createBrowserRouter([
       {
         path: '/o-nas/',
         element: <AboutUsPage />
+      },
+      {
+        path: '/trenery',
+        element: <TrainersPage />
       },
       {
         path: '*',
