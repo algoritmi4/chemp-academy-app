@@ -1,13 +1,17 @@
 import { ReactElement } from "react";
 import { PriceBlock } from "./PriceBlock";
+import { Title } from "../Title";
+import { priceBlockData } from "../../utils/data";
 
 export function Prices(): ReactElement {
   return (
     <section className="pb-[50px]">
-      <h2 className="text-[28px] border-b-red border-b-solid border-b-3 mt-3 pb-3 text-center mx-3">Услуги и цены</h2>
-      <PriceBlock title="Пробная тренировка" text="Пробной тренировкой считается первое посещение нашего спортивного клуба. Запишите своего ребенка на пробное занятие прямо сейчас и дайте ему возможность окунуться в мир самбо и дзюдо!" price="0 р."/>
-      <PriceBlock title="Абонемент 8 посещений в месяц" text="Абонемент рассчитан на 2 посещения в неделю в течении месяца. В случае невозможности посетить занятие, происходит перерасчет абонемента на следующий месяц только в случае предоставления справки о болезни." price="5 500 р."/>
-      <PriceBlock title="Абонемент 12 посещений в месяц" text="Абонемент рассчитан на 3 посещения в неделю в течении месяца. В случае невозможности посетить занятие, происходит перерасчет абонемента на следующий месяц только в случае предоставления справки о болезни." price="6 500 р."/>
+      <Title text="Услуги и цены"/>
+      <ul className="md:flex md:flex-wrap md:justify-center">
+        {
+          priceBlockData.map((el, index) => <li key={index} className="md:max-w-[320px]"><PriceBlock title={el.title} text={el.text} price={el.price} /></li>)
+        }
+      </ul>
     </section>
   )
 }

@@ -18,11 +18,14 @@ export default {
         'to-top-white-transparent': 'linear-gradient(to top, white, transparent)',
         'contacts-teaser-bg': 'url("images/contacts-teaser-bg.jpg")',
         'about-us-teaser-bg': 'url("images/slider-order.jpg")',
-        'services-teaser-bg': 'url("images/services-teaser-bg.jpg")'
+        'services-teaser-bg': 'url("images/services-teaser-bg.jpg")',
+        'cross': 'url("images/close-cross.svg")'
       },
       colors: {
         'red': '#f33636',
+        'gray': 'rgba(249,249,249,1.00)',
         'gray-text': '#67768e',
+        'gray-border': 'rgba(0,0,0,0.25)',
         'blue-text': '#060097',
         'light-purple': '#f9f6fe',
         'blue': '#3858e9'
