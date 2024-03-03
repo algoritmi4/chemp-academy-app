@@ -5,7 +5,7 @@ import { Questions } from "../components/Questions";
 
 function ContactsPage(): ReactElement {
   return (
-    <main className="w-screen pt-[90px] grow">
+    <main className="w-full pt-[90px] grow">
       <Teaser text="Контакты" bgClass="bg-contacts-teaser-bg"/>
       <Positions />
       <Questions />

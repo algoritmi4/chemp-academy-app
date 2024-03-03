@@ -9,7 +9,7 @@ import { Attention } from "../components/Attention";
 
 function AboutUsPage(): ReactElement {
   return (
-    <main className="w-screen pt-[90px] grow">
+    <main className="w-full pt-[90px] grow">
       <Teaser text="О нас" bgClass="bg-about-us-teaser-bg"/>
       <Directions />
       <Advantages />

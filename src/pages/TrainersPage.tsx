@@ -4,7 +4,7 @@ import { Trainers } from "../components/Trainers/Trainers";
 
 function TrainersPage(): ReactElement {
   return (
-    <main className="w-screen pt-[90px] grow">
+    <main className="w-full pt-[90px] grow">
       <Teaser text="Тренеры" bgClass="bg-contacts-teaser-bg" />
       <Trainers />
     </main>

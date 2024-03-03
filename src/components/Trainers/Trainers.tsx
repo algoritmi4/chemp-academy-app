@@ -1,11 +1,12 @@
 import { ReactElement } from "react";
 import { TrainerBlock } from "./TrainerBlock";
 import { trainerBlocksData } from "../../utils/data";
+import { Title } from "../Title";
 
 export function Trainers(): ReactElement {
   return (
-    <section className="py-[50px] flex flex-col">
-      <h2 className="text-[28px] border-b-red border-b-solid border-b-3 mt-3 pb-3 text-center mx-3">Наши тренеры</h2>
+    <section className="py-[50px] flex flex-col max-w-[1200px] mx-auto">
+      <Title text="Наши тренеры" />
       <ul className="md:flex md:flex-wrap md:justify-center">
         {
           trainerBlocksData.map((el, index) => <li key={index}><TrainerBlock image={el.image} text={el.text} /></li>)

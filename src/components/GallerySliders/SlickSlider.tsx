@@ -11,8 +11,6 @@ const settings = {
   slidesToShow: 2,
   slidesToScroll: 1,
   className: 'w-[104.5%] h-[400px]',
-  autoplay: true,
-  autoplaySpeed: 3000,
   nextArrow: <SliderArrow prev={false} />,
   prevArrow: <SliderArrow prev={true} />
 };

@@ -1,16 +1,17 @@
 import { ReactElement } from "react";
 import { AdvantagesBlock } from "./Advantages/AdvantagesBlock";
-import warmUp from '../images/warm-up-150x150.png';
-import sambo from '../images/sambo-150x150.png';
-import stratching from '../images/stratching-150x150.png';
+import { Title } from "./Title";
+import { trainingProcessBlocksData } from "../utils/data";
 
 export function TrainingProcess(): ReactElement {
   return (
     <section className="bg-black text-white flex flex-col pb-[84px]">
-      <h2 className="text-[28px] border-b-red border-b-solid border-b-3 mt-12 pb-3 text-center mx-2">Как проходит тренировка по дзюдо в “Академии Чемпионов”</h2>
-      <AdvantagesBlock image={warmUp} title="Разминка" text="Прежде чем начинать полноценный тренировочный процесс, нужно убедиться, что спортсмен подготовлен к занятию. Группа выполняет разогревающие упражнения на все группы мышц. Это нужно для того, чтобы избежать излишнего растяжения мышечных волокон и настроиться на обучение." />
-      <AdvantagesBlock image={sambo} title="Обучение" text="Теперь можно переходить к самому интересному – обучению технике самбо и дзюдо. Как правило, этот процесс состоит из демонстрации, отработки, специальных упражнений и игр.Во время демонстрации тренер покажет технику, выделяя ключевые моменты. Затем юные борцы будут повторять это упражнение, а мы наблюдать и корректировать выполнение. Специальные упражнения совершенствуют технику спортсмена, развивают физическую силу, скорость и выносливость." />
-      <AdvantagesBlock image={stratching} title="ОФП и растяжка" text="Каждое занятие в “Академии Чемпионов” заканчивается выполнением комплекса упражнений ОФП и растяжкой. Иногда спортсмены выполняют их самостоятельно, иногда в паре с товарищами. Цель – развитие выносливости, силы и гибкости спортсмена. Кроме того, растяжка расслабит тело после тренировки, улучшая способность организма восстановиться после физических нагрузок." />
+      <Title text="Как проходит тренировка по дзюдо в “Академии Чемпионов”" />
+      <ul className="md:flex md:flex-wrap md:justify-center 2xl:max-w-[1200px] 2xl:self-center">
+        {
+          trainingProcessBlocksData.map((el, index) => <li key={index} className="md:max-w-[320px] xl:max-w-[360px] 2xl:max-w-[400px]"><AdvantagesBlock image={el.image} title={el.title} text={el.text} /></li>)
+        }
+      </ul>
     </section>
   )
 }
