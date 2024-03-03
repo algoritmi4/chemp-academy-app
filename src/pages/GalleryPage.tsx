@@ -3,7 +3,7 @@ import { Teaser } from "../components/Teaser";
 import { Questions } from "../components/Questions";
 import { GallerySliders } from "../components/GallerySliders/GallerySliders";
 
-export function GalleryPage(): ReactElement {
+function GalleryPage(): ReactElement {
   return (
     <main className="w-screen pt-[90px] grow">
       <Teaser text="Галерея" bgClass="bg-contacts-teaser-bg" />
@@ -12,3 +12,5 @@ export function GalleryPage(): ReactElement {
     </main>
   )
 }
+
+export default GalleryPage;

@@ -7,10 +7,12 @@ import { Trainers } from "../components/Trainers/Trainers";
 import { Groups } from "../components/Groups/Groups";
 import { About } from "../components/About";
 import { Questions } from "../components/Questions";
+import { ApplicationPopup } from "../components/ApplicationPopup";
 
-export function MainPage(): ReactElement {
+function MainPage(): ReactElement {
   return (
-    <main className="w-screen pt-[90px] grow">
+    <main className="w-full pt-[90px] grow">
+      <ApplicationPopup />
       <MainTeaser />
       <Quote />
       <Advantages />
@@ -22,3 +24,5 @@ export function MainPage(): ReactElement {
     </main>
   )
 }
+
+export default MainPage;

@@ -3,7 +3,7 @@ import { Teaser } from "../components/Teaser";
 import { Positions } from "../components/Positions/Positions";
 import { Questions } from "../components/Questions";
 
-export function ContactsPage(): ReactElement {
+function ContactsPage(): ReactElement {
   return (
     <main className="w-screen pt-[90px] grow">
       <Teaser text="Контакты" bgClass="bg-contacts-teaser-bg"/>
@@ -12,3 +12,5 @@ export function ContactsPage(): ReactElement {
     </main>
   )
 }
+
+export default ContactsPage;

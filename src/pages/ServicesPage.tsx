@@ -5,7 +5,7 @@ import { Questions } from "../components/Questions";
 import { TrainingProcess } from "../components/TrainingProcess";
 import { Promotions } from "../components/Promotions";
 
-export function ServicesPage(): ReactElement {
+function ServicesPage(): ReactElement {
   return (
     <main className="w-screen pt-[90px] grow">
       <Teaser text="Услуги и цены" bgClass="bg-services-teaser-bg" />
@@ -16,3 +16,5 @@ export function ServicesPage(): ReactElement {
     </main>
   )
 }
+
+export default ServicesPage;
