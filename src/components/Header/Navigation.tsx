@@ -11,10 +11,12 @@ export function Navigation({ isHide, handleSwitchPage }: INavigationProps): Reac
   const location = useLocation();
 
   return (
-    <nav className={`absolute flex flex-col top-full w-full right-0 duration-100 ${isHide ? "invisible opacity-0" : "visible opacity-1"}`}>
-      {
-        routesList.map((el, index) => <Link onClick={handleSwitchPage} className={`text-[16px] px-5 border-t-gray border-t-1 border-t-solid h-[52px] flex items-center ${location.pathname == el.route ? "bg-light-purple text-black" : "bg-white text-gray-text"}`} to={el.route} key={index}>{el.text}</Link>)
-      }
+    <nav className="flex">
+      <ul className={`absolute flex flex-col top-full w-full right-0 lg:flex-row lg:static lg:items-center ${isHide ? "invisible lg:visible" : "visible"}`}>
+        {
+          routesList.map((el, index) => <li className={`text-[16px] pl-5 border-t-gray border-t-1 border-t-solid h-[52px] flex items-center lg:border-none ${location.pathname == el.route ? "bg-light-purple text-black lg:bg-white" : "bg-white text-gray-text"}`}><Link onClick={handleSwitchPage} to={el.route} key={index}>{el.text}</Link></li>)
+        }
+      </ul>
     </nav>
   )
 }
