@@ -19,8 +19,11 @@ export function BaseLayout(): ReactElement {
       {
         isLoad && <div className="absolute inset-0 bg-white z-50 flex justify-center items-center"><Preloader /></div>
       }
+      
       <Suspense fallback={<Preloader />}>
-        <Outlet />
+        <main className="w-full pt-[64px] grow lg:pt-[99px]">
+          <Outlet />
+        </main>
       </Suspense>
       <Footer />
     </div>

@@ -7,13 +7,13 @@ import { Promotions } from "../components/Promotions";
 
 function ServicesPage(): ReactElement {
   return (
-    <main className="w-full pt-[90px] grow">
+    <>
       <Teaser text="Услуги и цены" bgClass="bg-services-teaser-bg" />
       <Prices />
       <TrainingProcess />
       <Promotions />
       <Questions />
-    </main>
+    </>
   )
 }
 

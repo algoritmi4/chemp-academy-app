@@ -5,13 +5,13 @@ import { Advantages } from "../components/Advantages/Advantages";
 import { Prices } from "../components/Prices/Prices";
 import { Trainers } from "../components/Trainers/Trainers";
 import { Groups } from "../components/Groups/Groups";
-import { About } from "../components/About";
+import { About } from "../components/About/About";
 import { Questions } from "../components/Questions";
 import { ApplicationPopup } from "../components/ApplicationPopup";
 
 function MainPage(): ReactElement {
   return (
-    <main className="w-full pt-[90px] grow">
+    <>
       <ApplicationPopup />
       <MainTeaser />
       <Quote />
@@ -21,7 +21,7 @@ function MainPage(): ReactElement {
       <Groups />
       <About />
       <Questions />
-    </main>
+    </>
   )
 }
 

@@ -19,7 +19,13 @@ export default {
         'contacts-teaser-bg': 'url("images/contacts-teaser-bg.jpg")',
         'about-us-teaser-bg': 'url("images/slider-order.jpg")',
         'services-teaser-bg': 'url("images/services-teaser-bg.jpg")',
-        'cross': 'url("images/close-cross.svg")'
+        'cross': 'url("images/close-cross.svg")',
+        'blue-spots': 'url("images/bg-blue-spots.png")',
+        'advantages-bg': 'url("images/advantages-bg.png")',
+        'trainer-nicolay': 'url("images/trainer-nicolay.jpg")',
+        'trainer-ivan': 'url("images/trainer-ivan.jpg")',
+        'groups-bg': 'url("images/groups-bg.png")',
+        'about-bg': 'url("images/about-bg.png")'
       },
       colors: {
         'red': '#f33636',
@@ -28,10 +34,14 @@ export default {
         'gray-border': 'rgba(0,0,0,0.25)',
         'blue-text': '#060097',
         'light-purple': '#f9f6fe',
-        'blue': '#3858e9'
+        'blue': '#3858e9',
+        'green': '#34AA56'
       },
       boxShadow: {
-        'xl': '0 0 40px 1px rgb(243,54,54)'
+        'header': 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px',
+        'inset-top': 'inset 0 170px 100px 0 rgba(0,0,0,.9)',
+        'quote': 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+        'prices': 'rgba(99, 99, 99, 0.2) 0px 0px 15px 2px'
       },
       borderWidth: {
         '1': '1px',
@@ -42,7 +52,7 @@ export default {
         '6': '6px'
       },
       backgroundPosition: {
-        'left-of-center': '42% 100%'
+        'left-of-center': '40% 100%'
       },
       borderRadius: {
         'circle': '50%'

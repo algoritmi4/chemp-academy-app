@@ -1,14 +1,12 @@
 import { ReactElement } from "react";
-import { Title } from "./Title";
 
 export function Quote(): ReactElement {
   return (
-    <section className="flex flex-col">
-      <Title text="Что нас вдохновляет" />
-      <blockquote className="px-6 pt-[55px] pb-10 text-center md:pt-[80px] md:pb-20">
-        <p className="font-bold text-[22px] italic md:text-[32px] lg:text-[40px]">“Возможность преодолеть себя -<br></br>без сомнений, самое ценное свойство спорта.”</p>
-        <p className="text-gray-text text-[16px] font-normal not-italic mt-10 md:mt-16 lg:text-[18px]">Ольга Корбут</p>
+    <section className="flex flex-col bg-white items-center px-8 py-7">
+      <blockquote className="px-5 pr-[18px] py-5 text-center rounded-[30px] shadow-quote md:pt-[80px] md:pb-20">
+        <h3 className="font-medium text-[15px] md:text-[32px] lg:text-[40px]">“Возможность <span className="font-bold">преодолеть себя -</span><br></br>без сомнений, самое <span className="font-bold">ценное<br></br>свойство спорта.</span>”</h3>
       </blockquote>
+      <p className="text-black text-[16px] font-semibold leading-none mt-5 md:mt-16 lg:text-[18px]">&copy;Ольга Корбут</p>
     </section>
   )
 }

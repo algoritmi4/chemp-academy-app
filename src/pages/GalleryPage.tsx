@@ -5,11 +5,11 @@ import { GallerySliders } from "../components/GallerySliders/GallerySliders";
 
 function GalleryPage(): ReactElement {
   return (
-    <main className="w-full pt-[90px] grow">
+    <>
       <Teaser text="Галерея" bgClass="bg-contacts-teaser-bg" />
       <GallerySliders />
       <Questions />
-    </main>
+    </>
   )
 }
 

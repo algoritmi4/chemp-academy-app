@@ -9,7 +9,7 @@ export function Logo(): ReactElement {
   return (
     <picture>
       <source srcSet={lgLogo} media="(min-width: 1024px)"/>
-      <img className="w-[122px] h-[86px] cursor-pointer lg:w-[150px] lg:h-[131px]" onClick={() => navigate('/')} src={logo} alt="Академия чемпионов" />
+      <img className="w-[50px] cursor-pointer lg:w-[80px]" onClick={() => navigate('/')} src={logo} alt="Академия чемпионов" />
     </picture>
   )
 }
